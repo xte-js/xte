@@ -1,0 +1,6 @@
+{#def
+	Footer=
+	"footer/Footer.xte"
+}
+<Footer />
+{isMainPage}

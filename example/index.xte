@@ -1,0 +1,42 @@
+{#def Header /}
+{#def Footer="footer/footer.xte" /}
+{#def Card /}
+{#def Menu="main-menu.xte" /}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{title}</title>
+</head>
+<body>
+	<Header title={title} class="header header-main"  {title} class="header header-main" class="{main}" class={main}
+	title={card.title} {index}
+ class="footer" class='header header-main' class:footer-main={isMainPage}/>
+	<Menu/>
+	{#if isMainPage}
+		<main {class}>
+			main content
+		</main>
+	{:else}
+		<aside>
+			aside content
+		</aside>
+	{/if}
+	{#if isMainPage}
+		<main2>
+			main content
+		</main2>
+	{/if}
+	{#each cards as card, index}
+		<Card title={card.title} {index}>
+			card content<br>
+			title: {card.title}<br>
+			index: {index}<br>
+		</Card>
+	{/each}
+	<Footer class="footer" class:footer-main={isMainPage}>
+		footer slot
+	</Footer>
+</body>
+</html>

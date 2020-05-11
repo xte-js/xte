@@ -1,0 +1,9 @@
+{#def Card2}
+{#each card.child as card2, index}
+	<Card2 title={card.title} name={card2.name} {index} title="card">
+		2 Child comp content<br>
+	</Card2>
+{/each}
+
+3 Component content: Title: {title}<br>
+4 <slot></slot>

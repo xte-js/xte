@@ -1,0 +1,10 @@
+{
+	"name": "xte",
+	"version": "0.0.1",
+	"description": "xte - neXt Template Engine",
+	"main": "src/index.js",
+	"repository": "https://github.com/Th0rN13/xte.git",
+	"author": "Th0rN13 <th0r@inbox.ru>",
+	"license": "MIT",
+	"private": false
+}

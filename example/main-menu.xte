@@ -1,0 +1,6 @@
+{#def Card}
+{#each cards as card, index}
+	<Card title={card.title} {card} {index}>
+		1 Slot content >> title: {card.title}<br>
+	</Card>
+{/each}
